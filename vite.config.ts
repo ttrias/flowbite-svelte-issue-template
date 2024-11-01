@@ -8,10 +8,10 @@ import flowbiteSveltePackage from './node_modules/flowbite-svelte/package.json' 
 export default defineConfig({
 	plugins: [sveltekit()],
 	define: {
-    __SVELTE_VERSION__: JSON.stringify(sveltePackage.version),
-    __SVELTEKIT_VERSION__: JSON.stringify(svelteKitPackage.version),
-		__VITE_VERSION__: JSON.stringify(vitePackage.version),
-		__FLOWBITE_SVELTE_VERSION__: JSON.stringify(flowbiteSveltePackage.version)
+      __SVELTE_VERSION__: JSON.stringify(sveltePackage.version),
+      __SVELTEKIT_VERSION__: JSON.stringify(svelteKitPackage.version),
+	  __VITE_VERSION__: JSON.stringify(vitePackage.version),
+	  __FLOWBITE_SVELTE_VERSION__: JSON.stringify(flowbiteSveltePackage.version)
   },
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
