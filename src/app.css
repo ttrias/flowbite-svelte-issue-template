@@ -2,36 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  html {
-    -webkit-text-size-adjust: 100%;
-    font-family:
-      Inter,
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      Segoe UI,
-      Roboto,
-      Helvetica Neue,
-      Arial,
-      Noto Sans,
-      sans-serif,
-      Apple Color Emoji,
-      Segoe UI Emoji,
-      Segoe UI Symbol,
-      Noto Color Emoji;
-    line-height: 1.5;
-    -moz-tab-size: 4;
-    tab-size: 4;
-  }
-  main>h1 {
-    @apply text-3xl font-bold my-6
-  }
-  main>h2 {
-    @apply text-2xl font-bold my-4
-  }
-  main>h3 {
-    @apply text-xl font-bold my-2
-  }
+	html {
+		-webkit-text-size-adjust: 100%;
+		font-family:
+			Inter,
+			ui-sans-serif,
+			system-ui,
+			-apple-system,
+			Segoe UI,
+			Roboto,
+			Helvetica Neue,
+			Arial,
+			Noto Sans,
+			sans-serif,
+			Apple Color Emoji,
+			Segoe UI Emoji,
+			Segoe UI Symbol,
+			Noto Color Emoji;
+		line-height: 1.5;
+		-moz-tab-size: 4;
+		tab-size: 4;
+	}
+	main > h1 {
+		@apply my-6 text-3xl font-bold;
+	}
+	main > h2 {
+		@apply my-4 text-2xl font-bold;
+	}
+	main > h3 {
+		@apply my-2 text-xl font-bold;
+	}
 }

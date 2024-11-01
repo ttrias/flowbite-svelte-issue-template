@@ -15,7 +15,11 @@ export default [
 		languageOptions: {
 			globals: {
 				...globals.browser,
-				...globals.node
+				...globals.node,
+				__FLOWBITE_SVELTE_VERSION__: 'readonly',
+				__SVELTE_VERSION__: 'readonly',
+				__SVELTEKIT_VERSION__: 'readonly',
+				__VITE_VERSION__: 'readonly'
 			}
 		}
 	},
