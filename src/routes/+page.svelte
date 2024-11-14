@@ -1,5 +1,33 @@
-<script>
+<script lang="ts">
 	import { Heading, List, Li } from 'flowbite-svelte';
+	import {onMount} from "svelte";
+	import Test from '../lib/Test.svelte';
+	type ItemType = {
+		name: string,
+		value: number,
+		extra: string
+	}
+	let selectedItems: itemType[] = []
+	let testCtl: Test
+	onMount(() => {
+		testCtl.setNewSearchItems([
+			{
+				name: 'a',
+				value: 1,
+				extra: 'Foo'
+			},
+			{
+				name: 'b',
+				value: 2,
+				extra: 'Bar'
+			},
+			{
+				name: 'c',
+				value: 3,
+				extra: 'Baz'
+			}
+		])
+	})
 </script>
 
 <div class="p-9">
@@ -12,4 +40,5 @@
 		<Li class="text-2xl">Run `pnpm check`.</Li>
     <Li class="text-2xl">It's a good practice to run `pnpm format && pnpm lint`</Li>
 	</List>
+	<Test bind:this={testCtl} bind:selectedItems/>
 </div>
